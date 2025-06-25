@@ -3,11 +3,13 @@ version: 0.2
 phases:
   install:
     commands:
-      - echo Installing dependencies...
+      - echo "Installing dependencies (if any)..."
   build:
     commands:
-      - echo Build started
+      - echo "Build phase (not needed for static site)..."
 artifacts:
   files:
     - index.html
     - appspec.yml
+    - scripts/**/*
+
