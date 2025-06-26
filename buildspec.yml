@@ -1,16 +1,17 @@
-
 version: 0.2
 
 phases:
   install:
     commands:
-      - echo "Install phase started"
+      - echo Installing dependencies...
+      - apt update -y
+      - apt install -y apache2
   build:
     commands:
-      - echo "Build phase complete"
+      - echo Build phase — nothing to compile
 artifacts:
   files:
-    - index.html
-    - appspec.yml
+    - '**/*'
+
 
 
