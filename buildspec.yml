@@ -1,17 +1,15 @@
 version: 0.2
-
 phases:
   install:
-    commands:
-      - echo Installing dependencies...
-      - apt update -y
-      - apt install -y apache2
+    runtime-versions:
+      nodejs: 14
   build:
     commands:
-      - echo Build phase — nothing to compile
+      - echo Build completed successfully
 artifacts:
   files:
     - '**/*'
+
 
 
 
